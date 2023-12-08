@@ -60,10 +60,12 @@ $programs = @(
     "chocolatey",
     "chocolatey-core.extension",
     "chocolatey-compatibility.extension",
-    "mingw",
+    "chocolatey-windowsupdate.extension",
     "git",
+    "mingw",
     "notepadplusplus",
-    "neovim"
+    "neovim",
+    "nodejs"
 )
 
 # Get list of installed Chocolatey packages
