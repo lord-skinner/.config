@@ -5,9 +5,8 @@
 add_newline = true
 
 [character]
-style = 'bold green'
-format = '[󱖘 ]($style)'
-success_symbol = '󱖘 '
+success_symbol = '[󱖘](bold green) '
+error_symbol = '[✗](bold red) '
 
 # Disable the package module, hiding it from the prompt completely
 [package]
