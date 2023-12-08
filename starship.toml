@@ -28,20 +28,20 @@ style = 'bold green'
 [git_status]
 format = '[$all_status$ahead_behind]($style) '
 style = 'bold green'
-conflicted = ' 🏳'
+conflicted = '🏳'
 up_to_date = ''
-untracked = '  '
-ahead = ' ⇡${count}'
+untracked = ' '
+ahead = '⇡${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-behind = ' ⇣${count}'
-stashed = '  '
-modified = '  '
-staged = ' [++\($count\)](green)'
-renamed = ' 襁 '
-deleted = '  '
+behind = '⇣${count}'
+stashed = ' '
+modified = ' '
+staged = '[++\($count\)](green)'
+renamed = '襁 '
+deleted = ' '
 
 [gcloud]
-symbol = '󱘶'
+symbol = '󱇶 '
 
 [python]
 symbol = ' '
@@ -50,5 +50,7 @@ symbol = ' '
 symbol = '󱁢 '
 detect_extensions = ['tf', 'tfplan', 'tfstate']
 
-[docker_context]
-disabled = true
+# Shows kubernetes context and namespace
+[kubernetes]
+format = 'via [󱃾 $context\($namespace\)](bold purple) '
+disabled = false
