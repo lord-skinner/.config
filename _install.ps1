@@ -29,7 +29,6 @@ $programs = @(
     "Nvidia.GeForceExperience",
     "Nvidia.PhysX",
     "Google.Chrome",
-    "GitHub.cli",
     "WizardsoftheCoast.MTGALauncher"
 )
 
@@ -62,11 +61,17 @@ $programs = @(
     "chocolatey-core.extension",
     "chocolatey-compatibility.extension",
     "chocolatey-windowsupdate.extension",
+    "cpu-z",
+    "epicgameslauncher",
+    "icue",
+    "gh",
     "git",
+    "gpu-z"
     "mingw",
     "notepadplusplus",
     "neovim",
-    "nodejs"
+    "nodejs",
+    "vscodium"
 )
 
 # Get list of installed Chocolatey packages

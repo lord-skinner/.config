@@ -1,6 +1,19 @@
 {
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
     "editor.fontFamily": "SauceCodePro Nerd Font SemiBold",
     "terminal.integrated.fontFamily": "SauceCodePro Nerd Font SemiBold",
-    "terminal.integrated.minimumContrastRatio": 1,
-    "synthwave84.brightness": 1
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "python.interpreter.infoVisibility": "always",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "files.associations": {
+        "*.sql": "jinja-sql",
+        "*.yml": "yaml",
+        "**/target/**": ""
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    }
 }
