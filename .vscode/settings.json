@@ -1,10 +1,13 @@
 {
+    "workbench.colorTheme": "Dracula",
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
     "editor.fontFamily": "SauceCodePro Nerd Font SemiBold",
     "terminal.integrated.fontFamily": "SauceCodePro Nerd Font SemiBold",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "python.interpreter.infoVisibility": "always",
+    "python.defaultInterpreterPath": "~/.venv/Scripts/python.exe",
+    "dbt.dbtPythonPathOverride": "~/.venv/Scripts/python.exe",
     "git.enableSmartCommit": true,
     "git.autofetch": true,
     "git.confirmSync": false,
