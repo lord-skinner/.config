@@ -85,7 +85,8 @@ foreach ($program in $programs) {
     }
 }
 
-Battle.net-Setup.exe --lang=enUS --installpath="C:\Program Files (x86)\Battle.net"
+$installerPath = Join-Path -Path $PSScriptRoot -ChildPath "Battle.net-Setup.exe"
+Start-Process -FilePath $installerPath -ArgumentList '--lang=enUS --installpath="C:\Program Files (x86)\Battle.net"' -Wait -NoNewWindow
 
 # Load System.Windows.Forms for the MessageBox
 Add-Type -AssemblyName System.Windows.Forms
