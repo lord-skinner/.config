@@ -1,3 +1,25 @@
+# Check if WSL is installed
+if (Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux | Select-Object -ExpandProperty State -ErrorAction SilentlyContinue) {
+    Write-Host "WSL is already installed."
+} else {
+    # Install WSL
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
+    # Restart the computer
+    Restart-Computer -Force
+}
+
+# Check if Debian is installed
+$debianInstalled = wsl -l | Where-Object { $_ -match 'Debian' }
+if ($debianInstalled) {
+    Write-Host "Debian is already installed in WSL."
+} else {
+    # Install Debian
+    wsl --install -d Debian
+    # Restart the computer
+    Restart-Computer -Force
+}
+
+
 # List of programs to install or update
 $programs = @(
     # "Elgato.StreamDeck",
