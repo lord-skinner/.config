@@ -30,7 +30,8 @@ $programs = @(
     "Nvidia.GeForceExperience",
     "Nvidia.PhysX",
     "Google.Chrome",
-    "GitHub.cli"
+    "GitHub.cli",
+    "WizardsoftheCoast.MTGALauncher"
 )
 
 # Prompt for App Installer Update
@@ -45,7 +46,8 @@ foreach ($program in $programs) {
         # Program is installed, check for updates
         Write-Host "$program is already installed. Checking for updates..."
         winget upgrade --id $program --silent --accept-source-agreements --include-unknown
-    } else {
+    }
+    else {
         # Program is not installed, proceed with installation
         Write-Host "$program is not installed. Installing..."
         winget install --id $program --silent --accept-source-agreements
@@ -76,7 +78,8 @@ foreach ($program in $programs) {
         # Program is installed, check for updates
         Write-Host "$program is already installed. Checking for updates..."
         choco upgrade $program -y
-    } else {
+    }
+    else {
         # Program is not installed, proceed with installation
         Write-Host "$program is not installed. Installing..."
         choco install $program -y
