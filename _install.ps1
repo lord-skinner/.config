@@ -1,29 +1,27 @@
 # List of programs to install or update
 $programs = @(
+    # "Elgato.StreamDeck",
+    # "FocusriteAudioEngineeringLtd.FocusriteControl",
     "Chocolatey.Chocolatey",
     "Microsoft.AppInstaller",
     "Microsoft.VisualStudio.2022.Community",
     "Microsoft.VCRedist.2015+.x64",
     "Microsoft.VCRedist.2015+.x86",
-    "Microsoft.CLRTypesSQLServer.2019",
-    "Microsoft.VisualStudioCode",
     "Microsoft.WindowsSDK.10.0.22000",
     "Microsoft.WindowsTerminal",
     "Starship.Starship",
     "Docker.DockerDesktop",
+    "Postman.Postman",
+    "Google.CloudSDK",
+    "SimbaTechnologies.SimbaODBCDriverforGoogleBigQuery",
     "Discord.Discord",
     "Flow-Launcher.Flow-Launcher",
-    "FocusriteAudioEngineeringLtd.FocusriteControl",
     "GIMP.GIMP",
-    "Google.CloudSDK",
+    "7zip.7zip",
     "Greenshot.Greenshot",
-    "Postman.Postman",
     "Valve.Steam",
     "Zoom.Zoom",
     "SlackTechnologies.Slack",
-    "7zip.7zip",
-    "Elgato.StreamDeck",
-    "SimbaTechnologies.SimbaODBCDriverforGoogleBigQuery",
     "Logitech.GHUB",
     "VideoLAN.VLC",
     "Nvidia.GeForceExperience",
@@ -43,12 +41,12 @@ foreach ($program in $programs) {
     if ($installed -match $program) {
         # Program is installed, check for updates
         Write-Host "$program is already installed. Checking for updates..."
-        winget upgrade --id $program --silent --accept-source-agreements --include-unknown
+        winget upgrade --id $program -h --accept-source-agreements --include-unknown
     }
     else {
         # Program is not installed, proceed with installation
         Write-Host "$program is not installed. Installing..."
-        winget install --id $program --silent --accept-source-agreements
+        winget install --id $program -h --accept-source-agreements
     }
 }
 
@@ -71,7 +69,7 @@ $programs = @(
     "notepadplusplus",
     "neovim",
     "nodejs",
-    "vscodium"
+    "code"
 )
 
 # Get list of installed Chocolatey packages
