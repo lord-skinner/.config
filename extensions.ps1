@@ -2,6 +2,7 @@
 $extensions = @(
     "dracula-theme.theme-dracula",
     "ms-vscode.remote-explorer",
+    "ms-vscode-remote.remote-wsl"
     "ms-azuretools.vscode-docker",
     "timkmecl.chatgpt",
     "innoverio.vscode-dbt-power-user",

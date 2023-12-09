@@ -35,6 +35,8 @@ $programs = @(
     "Docker.DockerDesktop",
     "Postman.Postman",
     "Google.CloudSDK",
+    # "Google.Terraformer",
+    "Hashicorp.Terraform",
     "SimbaTechnologies.SimbaODBCDriverforGoogleBigQuery",
     "Discord.Discord",
     "Flow-Launcher.Flow-Launcher",
