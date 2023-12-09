@@ -3,7 +3,6 @@ $programs = @(
     "Chocolatey.Chocolatey",
     "Microsoft.AppInstaller",
     "Microsoft.VisualStudio.2022.Community",
-    "Microsoft.DevHome",
     "Microsoft.VCRedist.2015+.x64",
     "Microsoft.VCRedist.2015+.x86",
     "Microsoft.CLRTypesSQLServer.2019",
