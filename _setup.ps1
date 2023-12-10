@@ -2,10 +2,12 @@
 $scriptDir = $PSScriptRoot
 
 # Install Font if Not Exists
-$fontFile = Join-Path -Path $scriptDir -ChildPath "SourceCodePro\SauceCodeProNerdFont-SemiBold.ttf"
+$fontFile = Join-Path -Path $scriptDir -ChildPath "\SourceCodePro\SauceCodeProNerdFont-SemiBold.ttf"
 $fontFileName = "SauceCodeProNerdFont-SemiBold.ttf"
 $fontsFolderPath = "C:\Windows\Fonts"
 $destinationFontPath = Join-Path -Path $fontsFolderPath -ChildPath $fontFileName
+
+# D:\.config\SourceCodePro\SauceCodeProNerdFont-SemiBold.ttf
 
 if (-not (Test-Path $destinationFontPath)) {
     Copy-Item $fontFile $fontsFolderPath
